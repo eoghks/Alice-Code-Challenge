@@ -1,3 +1,5 @@
+목표량
+---
 엘리스 토끼는 목표량을 정해 수학 문제를 열심히 풉니다. 목표량은 정수입니다.
 
 내일 풀 수학 문제의 개수는 오늘 푼 문제 개수의 수와 숫자의 구성이 같으면서, 오늘 푼 문제 개수의 수보다 큰 수 중 가장 작은 수입니다.
@@ -16,7 +18,7 @@
 	<li>시간 제한: 1초 </li>
 </ul>
 
-<p><strong class="example">Example 3:</strong></p>
+<p><strong class="example">Example</strong></p>
 
 <pre><strong>Input:</strong> 365
 <strong>Output:</strong> 436
