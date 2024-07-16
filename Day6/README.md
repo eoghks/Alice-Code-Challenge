@@ -36,4 +36,5 @@ k번째 차례에 사용할 색깔이 주어질 때, 정점을 골라서 얻을 
 <pre>
  1
 </pre>
+  
 ![image](https://github.com/user-attachments/assets/517ca2cb-ec70-414f-b517-663d5b30078c)
