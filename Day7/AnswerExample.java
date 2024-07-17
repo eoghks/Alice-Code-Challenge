@@ -10,11 +10,16 @@ public class Main {
         
         boolean[] digit = new boolean[10];
         int cnt = 0;
-        
+
+        /*
         if (K == 10) {
             System.out.println("1023456789");
         } else if (K == 9) {
             System.out.println("102345678");
+        }*/
+        if(N.length() < K){
+            long result = 1023456789 / (long)Math.pow(10, 10-K);
+            System.out.println(result);
         } else {
             while (cnt != K) {
                 Arrays.fill(digit, false);
