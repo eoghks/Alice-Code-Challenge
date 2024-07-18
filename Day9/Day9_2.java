@@ -38,23 +38,29 @@ class Main {
                 Info info = pq.poll();
                 if(info.x1 == info.x2 && info.y1 == info.y2) {
                     weight = Math.min(weight, info.weight);
-                    break;
+                    continue;
                 }
 
                 if(info.weight > weight) {
                     continue;
                 }
 
-                if(info.x1 < info.x2) {
-                    pq.add(new Info(info.x1 + 1, info.y1, info.x2, info.y2, info.weight + weights[info.x1][info.y1] + weights[info.x1 + 1][info.y1]));
-                } else if(info.x2 < info.x1) {
-                    pq.add(new Info(info.x1 - 1, info.y1, info.x2, info.y2, info.weight + weights[info.x1][info.y1] + weights[info.x1 - 1][info.y1]));
+                int tempWeight = info.weight + weights[info.x1][info.y1];
+
+                if(info.x1 < n) {
+                    pq.add(new Info(info.x1 + 1, info.y1, info.x2, info.y2, tempWeight + weights[info.x1 + 1][info.y1]));
+                } 
+
+                if(info.x1 > 1) {
+                    pq.add(new Info(info.x1 - 1, info.y1, info.x2, info.y2, tempWeight + weights[info.x1 - 1][info.y1]));
                 }
 
-                if(info.y1 < info.y2) {
-                    pq.add(new Info(info.x1, info.y1 + 1, info.x2, info.y2, info.weight + weights[info.x1][info.y1] + weights[info.x1][info.y1 + 1]));
-                } else if(info.y2 < info.y1) {
-                    pq.add(new Info(info.x1, info.y1 - 1, info.x2, info.y2, info.weight + weights[info.x1][info.y1] + weights[info.x1][info.y1 - 1]));
+                if(info.y1 < n) {
+                    pq.add(new Info(info.x1, info.y1 + 1, info.x2, info.y2, tempWeight + weights[info.x1][info.y1 + 1]));
+                } 
+
+                if(info.y1 > 1) {
+                    pq.add(new Info(info.x1, info.y1 - 1, info.x2, info.y2, tempWeight + weights[info.x1][info.y1 - 1]));
                 }
             }
 
