@@ -11,5 +11,9 @@
 | Day 6 | 빨간선과 파란선 | 60 | 
 | Day 7 | 계기판 조작하기 | 24 | 
 | Day 8 | 강림제 |  80 |
-| Day 9 |  |  |  |
-| Day 10 |  |  |  |
+| Day 9 | 격자위의 앨리스 | 45 |
+| Day 10 | 계단 카드 뽑기 | 참여 못함 |
+
+---
+
+![image](https://github.com/user-attachments/assets/abd1b10b-70b1-4e75-8009-d19c158584d2)
